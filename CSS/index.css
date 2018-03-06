@@ -6,11 +6,34 @@ html, body {
 	width: 100%;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25em;
-    letter-spacing:-0.03em;
-    height: 100%;
+.head  {
+	font-family: 'Roboto', sans-serif;
+	font-size: 8em;
+       	letter-spacing:-0.03em;
+	height: 100%;
+}
+
+.subHead {
+	font-family: 'Open Sans';
+	font-size: 2.5em;
+	letter-spacing:-0.03em;
+	height: 100%;
+}
+
+#coverAboutMe {
+	position: absolute;
+	left: 45.5%;
+	top: 59%;
+	height: 6%;
+	width: 9%;
+}
+
+#coverMyProjects {
+	position: absolute;
+	left: 45%;
+	top: 65%;
+	height: 5%;
+	width: 10%;
 }
 
 svg {
@@ -20,11 +43,17 @@ svg {
 }
 
 svg text {
-    text-anchor: start;
+    text-anchor: middle;
 }
 
 svg mask rect {
     fill: rgba(255, 255, 255, 1);
+}
+
+.line {
+    fill: rgba(0, 0, 0, 1);
+    transform-origin: middle;
+    transition: 0.5s ease;
 }
 
 svg > rect {
@@ -35,12 +64,13 @@ svg > rect {
 
 video {
 	position: absolute;
-	top: 0%;
-	left: 0%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
+	top: 50%;
+	left: 50%;
+	min-width: 50%;
+	min-height: 50%;
+	width: 44%;
 	height: auto;
 	z-index: -1;
 	overflow: hidden;
+       	transform: translate(-50%, -50%);
 }
