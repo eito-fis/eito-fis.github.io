@@ -20,6 +20,14 @@ html, body {
 	height: 100%;
 }
 
+div {
+	font-family: 'Open Sans';
+}
+
+h1 {
+	color: #777777;
+}
+
 #coverAboutMe {
 	position: absolute;
 	left: 45.5%;
@@ -34,6 +42,10 @@ html, body {
 	top: 65%;
 	height: 5%;
 	width: 10%;
+}
+
+.slideOff  {
+	transition: 2s ease;
 }
 
 svg {
@@ -73,4 +85,46 @@ video {
 	z-index: -1;
 	overflow: hidden;
        	transform: translate(-50%, -50%);
+	transition: 2s ease;
+}
+
+#projectTextHolder {
+	position: absolute;
+	height: 40%;
+	width: 30%;
+	top: 30%;
+	left: 12%;
+	padding-left: 2.1%;
+	opacity: 0;
+	transition: 3s ease;
+}
+
+#projectTitle {
+	width: 100%;
+	height: auto;
+	font-size: 1.7em;
+}
+
+#projectTextBorder {
+	position: absolute;
+	height:  0%;
+	width: 2px;
+	top: 3%;
+	left: -2.1%;
+	background-color: #666666;
+	transition: 3.2s ease;
+}
+
+#backButtonProject {
+	position: absolute;
+	top: 50%;
+	left: 94%;
+       	transform: translate(0%, -50%);
+	width: 10%;
+	height: auto;
+	font-size: 1.2em;
+	font-style: bold;
+	opacity: 0;
+	transition: 3s ease;
+	opacity: 0;
 }
