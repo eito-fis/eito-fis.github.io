@@ -4,6 +4,7 @@
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
 		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jquery.animate-shadow-min.js"></script>
 		<title>Eamon Ito-Fisher</title>
 	</head>
 	<body>
@@ -17,16 +18,16 @@
 						<text class="" alignment-baseline="hanging" x="50%" y="47%">ITO-FISHER</text>
 					</g>
 					<g id="aboutMe" class="subHead">
-						<text class="" alignment-baseline="hanging" x="50%" y="57.5%">About Me</text>
-						<rect class="line" x="47%" y="60.5%" width="6%" height="0.1%"/>
+						<text class="" alignment-baseline="hanging" x="50%" y="57.5%">About</text>
+						<rect class="line" x="49%" y="60.5%" width="2%" height="0.1%"/>
 					</g>
 					<g id="myProjects" class="subHead">
-						<text class="" alignment-baseline="hanging" x="50%" y="62%">My Projects</text>
-						<rect class="line" x="46%" y="65%" width="8%" height="0.1%"/>
+						<text class="" alignment-baseline="hanging" x="50%" y="62%">Projects</text>
+						<rect class="line" x="48%" y="65%" width="4%" height="0.1%"/>
 					</g>
 				</mask>
 			</defs>
-			<rect id="cover" class="slideOff"  x="0" y="0" width="100%" height="100%"/>
+			<rect id="slideOff"  x="0" y="0" width="100%" height="100%"/>
 		</svg>
 		<div id="coverAboutMe"></div>
 		<div id="coverMyProjects"></div>
@@ -37,11 +38,14 @@
 			<div id="projetText"></div>
 		</div>
 		<div id="videoHolder">
+			<div id="projectUp" class="videoNav"></div>
+			<div id="projectDown" class="videoNav"></div>
 			<video class="backVideo" autoplay loop muted>
 				<source src="videos/starryNightDots.mp4" type="video/mp4">
 			</video>
-			<div id="videoCaption"> A recreation of Pointillisim with Van Goh's Starry Night.</div>
+			<div id="videoCaption"> A re-creation of Pointillisim with Van Gogh's Starry Night.</div>
 		</div>
+		<div id="dropShadow"></div>
 		<script src="js/responsive.js"></script>
 	</body>
 </html>
