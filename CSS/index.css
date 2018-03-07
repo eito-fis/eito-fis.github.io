@@ -25,22 +25,22 @@ div {
 }
 
 h1 {
-	color: #777777;
+	color: #444444;
 }
 
 #coverAboutMe {
 	position: absolute;
 	left: 45.5%;
-	top: 61%;
-	height: 6%;
+	top: 58.5%;
+	height: 4.5%;
 	width: 9%;
 }
 
 #coverMyProjects {
 	position: absolute;
 	left: 45%;
-	top: 68%;
-	height: 6%;
+	top: 64%;
+	height: 4.5%;
 	width: 10%;
 }
 
@@ -74,18 +74,31 @@ svg > rect {
     mask: url(#mask);
 }
 
-video {
+#videoHolder {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	min-width: 50%;
-	min-height: 50%;
 	width: 44%;
+	height: 50%;
+	z-index: -1;
+       	transform: translate(-50%, -50%);
+	transition: 2s ease;
+}
+
+#videoCaption {
+	font-size: 1.6vh;
+	font-style: italic;
+	text-align: center;
+	opacity: 0;
+	padding-top: 15%;
+	transition: padding-top 2.5s ease;
+}
+
+video {
+	width: 100%;
 	height: auto;
 	z-index: -1;
 	overflow: hidden;
-       	transform: translate(-50%, -50%);
-	transition: 2s ease;
 }
 
 #projectTextHolder {
@@ -93,38 +106,55 @@ video {
 	height: 40%;
 	width: 30%;
 	top: 30%;
-	left: 12%;
+	left: 14%;
 	padding-left: 2.1%;
 	opacity: 0;
-	transition: 3s ease;
 }
 
 #projectTitle {
 	width: 100%;
 	height: auto;
-	font-size: 1.7em;
+	font-size: 4vh;
+	margin-top: -15%;
+	transition: margin-top 2.5s ease;
 }
 
 #projectTextBorder {
 	position: absolute;
 	height:  0%;
 	width: 2px;
-	top: 3%;
-	left: -2.1%;
+	top: 2%;
+	left: -17.1%;
 	background-color: #666666;
-	transition: 3.2s ease;
+	transition: 1.5s ease;
 }
 
 #backButtonProject {
 	position: absolute;
 	top: 50%;
-	left: 94%;
+	left: 109%;
        	transform: translate(0%, -50%);
 	width: 10%;
 	height: auto;
-	font-size: 1.2em;
+	font-size: 2vh;
 	font-style: bold;
 	opacity: 0;
-	transition: 3s ease;
-	opacity: 0;
+	color: #666666;
+	transition: left 1.5s ease;
+	font-weight: bold;
+}
+
+#backButtonProjectBorder {
+	width: 0%;
+	height: 2px;
+	background-color: #444444;
+	transition: 0.5s ease;
+}
+
+#backButtonProject:hover {
+	color: #444444;
+}
+
+#backButtonProject:hover div{
+	width: 30%;
 }

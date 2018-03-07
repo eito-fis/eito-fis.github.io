@@ -24,22 +24,41 @@ $("#coverMyProjects").mouseleave(function() {
 
 //About Me and My Project button clicks
 $("#coverMyProjects").click(function() {
-	$(".slideOff").attr("x", "110%");
-	$("video").css("left", "64%");
-	$("#backButtonProject").css("opacity", "1");
-	$("#projectTextHolder").css("opacity", "1");
-	$("#projectTextBorder").css("height", "80%");
-	page = "My Projects";
+	if (page == "Home") {
+		//Revert Borders
+		$("#myProjects rect").attr( {"width": "10%", "x":"45%"} );
+		$("#aboutMe rect").attr( {"width": "9%", "x":"45.5%"} );
+	
+		//Fade in My Projects
+		$(".slideOff").attr("x", "110%");
+		$("#videoHolder").css("left", "64%");
+		$("#backButtonProject").delay(400).fadeTo("500", "1");
+		$("#backButtonProject").css("left", "94%");
+		$("#projectTextHolder").delay(600).fadeTo("1000", "1");
+		$("#projectTitle").css("margin-top", "0");
+		$("#projectTextBorder").css("height", "80%");
+		$("#projectTextBorder").css("left", "-2.1%");
+		$("#videoCaption").delay(600).fadeTo("1000", "1");
+		$("#videoCaption").css("padding-top", "1%");
+		page = "My Projects";
+	}
 });
 
 //My Projects Page
 
 //Back Button click
 $("#backButtonProject").click(function() {
-	$(".slideOff").attr("x", "0%");
-	$("video").css("left", "50%");
-	$("#backButtonProject").css("opacity", "0");
-	$("#projectTextHolder").css("opacity", "0");
-	$("#projectTextBorder").css("height", "0%");
-	page = "Home";
+	if (page == "My Projects") {
+		$(".slideOff").attr("x", "0%");
+		$("#videoHolder").css("left", "50%");
+		$("#backButtonProject").fadeTo("50", "0");
+		$("#backButtonProject").css("left", "109%");
+		$("#projectTextHolder").fadeTo("100", "0");
+		$("#projectTitle").css("margin-top", "-15%");
+		$("#projectTextBorder").css("height", "0%");
+		$("#projectTextBorder").css("left", "-17.1%");
+		$("#videoCaption").fadeTo("50", "0");
+		$("#videoCaption").css("padding-top", "15%");
+		page = "Home";
+	}
 });
