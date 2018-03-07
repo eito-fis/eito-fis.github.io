@@ -35,16 +35,36 @@
 		<div id="projectTextHolder">
 			<h1 id="projectTitle">Processing</h1>
 			<div id="projectTextBorder"></div>
-			<div id="projetText"></div>
+			<div id="projectText">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae risus malesuada, aliquam dolor ut, vulputate odio. Etiam fermentum tempus consectetur. Nullam vel velit ac dui convallis euismod. Ut vehicula sem eu quam venenatis tristique. Ut vel cursus mi, vitae sagittis libero. In mi ante, cursus ut porta quis, facilisis a turpis. Maecenas nec mi eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare diam orci, ac luctus mauris rhoncus sed. Etiam maximus sed nulla at pretium.
+			</div>
 		</div>
-		<div id="videoHolder">
-			<div id="projectUp" class="videoNav"></div>
-			<div id="projectDown" class="videoNav"></div>
-			<video class="backVideo" autoplay loop muted>
-				<source src="videos/starryNightDots.mp4" type="video/mp4">
-			</video>
-			<div id="videoCaption"> A re-creation of Pointillisim with Van Gogh's Starry Night.</div>
-		</div>
+		<ul id="videoHolder">
+			<li id="points" class="current">
+				<div class="videoNav projectUp"></div>
+				<div class="videoNav projectDown"></div>
+				<video class="backVideo" autoplay loop muted>
+					<source src="videos/starryNightDots.mp4" type="video/mp4">
+				</video>
+				<div id="videoCaption"> A re-creation of Pointillisim with Van Gogh's Starry Night.</div>
+			</li>
+			<li id="brush">
+				<div class="videoNav projectUp"></div>
+				<div class="videoNav projectDown"></div>
+				<video class="backVideo" autoplay loop muted>
+					<source src="videos/waveStrokes.mp4" type="video/mp4">
+				</video>
+				<div id="videoCaption"> Simulating oil painting brush strokes.</div>
+			</li>
+			<li id="sketch">
+				<div class="videoNav projectUp"></div>
+				<div class="videoNav projectDown"></div>
+				<video class="backVideo" autoplay loop muted>
+					<source src="videos/monaSketch.mp4" type="video/mp4">
+				</video>
+				<div id="videoCaption">Mimicking sketching with Da Vinci's Mona Lisa.</div>
+			</li>
+		</ul>
 		<div id="dropShadow"></div>
 		<script src="js/responsive.js"></script>
 	</body>
