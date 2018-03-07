@@ -65,7 +65,7 @@ svg mask rect {
 .line {
     fill: rgba(0, 0, 0, 1);
     transform-origin: middle;
-    transition: 0.5s ease;
+    transition: 1s ease;
 }
 
 svg > rect {

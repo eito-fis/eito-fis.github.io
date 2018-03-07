@@ -6,20 +6,20 @@ var page = "Home";
 //About Me and My Projects button responsiveness
 $("#coverAboutMe").mouseenter(function() {
 	if (page == "Home")
-		$("#aboutMe rect").attr( {"width": "11%", "x":"44.5%"} );
+		$("#aboutMe rect").attr( {"width": "9%", "x":"45.5%"} );
 });
 $("#coverAboutMe").mouseleave(function() {
 	if (page == "Home")
-		$("#aboutMe rect").attr( {"width": "9%", "x":"45.5%"} );
+		$("#aboutMe rect").attr( {"width": "6%", "x":"47%"} );
 });
 
 $("#coverMyProjects").mouseenter(function() {
 	if (page == "Home")
-		$("#myProjects rect").attr( {"width": "12%", "x":"44%"} );
+		$("#myProjects rect").attr( {"width": "11%", "x":"44.5%"} );
 });
 $("#coverMyProjects").mouseleave(function() {
 	if (page == "Home")
-		$("#myProjects rect").attr( {"width": "10%", "x":"45%"} );
+		$("#myProjects rect").attr( {"width": "8%", "x":"46%"} );
 });
 
 //About Me and My Project button clicks
