@@ -36,7 +36,7 @@ $("#coverMyProjects").click(function() {
 			$("#slideOff").off(transEnd);
 		});
 		$("#videoHolder").css("left", "64%");
-		$("#videoHolder").delay(600).animate({"box-shadow": "8px 8px 15px 7px rgb(7,7,7,0.2)"}, 1000);
+		$("#videoHolder").delay(600).animate({"box-shadow": "0px 8px 15px 7px rgb(7,7,7,0.2)"}, 1000);
 		$("#backButtonProject").delay(400).fadeTo("500", "1");
 		$("#backButtonProject").css("left", "95%");
 		$("#projectTextHolder").delay(600).fadeTo("1000", "1");
@@ -44,8 +44,8 @@ $("#coverMyProjects").click(function() {
 		$("#projectTextBorder").css("height", "80%");
 		$("#projectTextBorder").css("left", "-2.1%");
 		$("#videoCaption").delay(600).fadeTo("1000", "1");
-		$("#videoCaption").css("padding-top", "1%");
-		$(".videoNav").delay(600).fadeTo("500", "1").animate({"box-shadow": "3px 3px 5px 2px rgb(7,7,7,0.2)"}, 500);
+		$("#videoCaption").css("padding-top", "2%");
+		$(".videoNav").delay(600).fadeTo("500", "1").animate({"box-shadow": "0px 3px 5px 2px rgb(7,7,7,0.2)"}, 500);
 		page = "My Projects";
 	}
 });
