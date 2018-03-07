@@ -90,7 +90,7 @@ svg > rect {
 	font-style: italic;
 	text-align: center;
 	opacity: 0;
-	padding-top: 15%;
+	padding-top: 5%;
 	transition: padding-top 2.5s ease;
 }
 

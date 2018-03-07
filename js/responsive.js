@@ -26,8 +26,8 @@ $("#coverMyProjects").mouseleave(function() {
 $("#coverMyProjects").click(function() {
 	if (page == "Home") {
 		//Revert Borders
-		$("#myProjects rect").attr( {"width": "10%", "x":"45%"} );
-		$("#aboutMe rect").attr( {"width": "9%", "x":"45.5%"} );
+		$("#aboutMe rect").attr( {"width": "6%", "x":"47%"} );
+		$("#myProjects rect").attr( {"width": "8%", "x":"46%"} );
 	
 		//Fade in My Projects
 		$(".slideOff").attr("x", "110%");
@@ -58,7 +58,7 @@ $("#backButtonProject").click(function() {
 		$("#projectTextBorder").css("height", "0%");
 		$("#projectTextBorder").css("left", "-17.1%");
 		$("#videoCaption").fadeTo("50", "0");
-		$("#videoCaption").css("padding-top", "15%");
+		$("#videoCaption").css("padding-top", "5%");
 		page = "Home";
 	}
 });
