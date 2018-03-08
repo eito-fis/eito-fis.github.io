@@ -68,7 +68,7 @@ svg mask rect {
 .line {
     fill: rgba(0, 0, 0, 1);
     transform-origin: middle;
-    transition: 0.75s ease;
+    transition: 0.35s ease;
 }
 
 svg > rect {
@@ -209,7 +209,7 @@ video {
 	width: 0%;
 	height: 2px;
 	background-color: #777;
-	transition: width 0.75s ease;
+	transition: width 0.35s ease;
 }
 
 #backButtonProject:active {
@@ -235,12 +235,12 @@ video {
 	box-shadow: 0px 0px 0px 0px rgba(7,7,7,0.2);
 	z-index: 10;
 	background-color: #777;
-	transition: width 0.6s,
-		height  0.6s;
+	transition: width 0.4s,
+		height  0.4s;
 	opacity: 0;
 }
 
-.videoNav:hover {
+videoNav:hover {
 	height: 4vh;
 	width: 4vh;
 }

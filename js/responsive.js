@@ -38,7 +38,7 @@ $("#coverMyProjects").click(function() {
 			$("#slideOff").off(transEnd);
 		});
 		$("#videoHolder").css("left", "64%");
-		$("#videoHolder .current .slotHolder").delay(600).animate({"box-shadow": "0px 8px 15px 7px rgb(7,7,7,0.2)"}, 1000);
+		$("#videoHolder .current .slotHolder").delay(900).animate({"box-shadow": "0px 8px 15px 7px rgb(7,7,7,0.2)"}, 400);
 		$("#backButtonProject").delay(400).fadeTo("500", "1");
 		$("#backButtonProject").css("left", "95%");
 		$("#projectTextHolder").delay(600).fadeTo("1000", "1");
@@ -70,14 +70,14 @@ $(".videoNav").mousedown(function() {
 	}
 });
 
-//videoNav clicked
+//Vertical Carosel
 $("#videoHolder").on("click", ".current .videoNav", function(event) {
 	event.preventDefault();
 	if (page == "My Projects") {
 		var middle = $(".current");
 		var up = $(".up");
 		var down = $(".down");
-		$("#videoHolder .current .slotHolder").delay(600).animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 1000);
+		$("#videoHolder .current .slotHolder").delay(900).animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 400);
 		if ($(this).hasClass("projectUp")) {	
 			middle.removeClass("current").addClass("down");
 			up.removeClass("up").addClass("current");
@@ -88,12 +88,17 @@ $("#videoHolder").on("click", ".current .videoNav", function(event) {
 			down.removeClass("down").addClass("current");
 			up.css("z-index", "-1").removeClass("up").addClass("down");
 		}
-		$("#videoHolder .current .slotHolder").delay(600).animate({"box-shadow": "0px 8px 15px 7px rgb(7,7,7,0.2)"}, 1000);
+		$("#videoHolder .current .slotHolder").delay(900).animate({"box-shadow": "0px 8px 15px 7px rgb(7,7,7,0.2)"}, 400);
 		$(".slide").css("z-index", "0");
 	}
 });
 
-//Back Button click
+//Video restart on click
+$("video").click(function() {
+	$(this).get(0).currentTime = 0;
+});
+
+//backButton click
 $("#backButtonProject").click(function() {
 	if (page == "My Projects") {
 		$("svg").css("z-index", "3");
