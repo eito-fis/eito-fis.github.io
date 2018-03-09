@@ -47,7 +47,7 @@ h1 {
 }
 
 #slideOff  {
-	transition: x 1.5s ease;
+	transition: x 2s ease;
 }
 
 svg {
@@ -186,15 +186,13 @@ video {
 	color: #777;
 }
 
-#backButtonProject {
+.backButton {
 	position: absolute;
 	top: 50%;
-	left: 109%;
        	transform: translate(0%, -50%);
-	width: 10%;
+	width: 3%;
 	height: auto;
 	font-size: 2.5vh;
-	opacity: 0;
 	color: #666666;
 	margin-bottom: 0;
 	transition: left 1.5s ease,
@@ -205,26 +203,38 @@ video {
 	z-index: 5;
 }
 
-#backButtonProjectBorder {
+#backProject {
+	opacity: 0;
+	left: 109%;
+}
+
+#backAbout {
+	opacity: 0;
+	left: -9%;
+}
+
+.backButtonBorder {
 	width: 0%;
 	height: 2px;
 	background-color: #777;
-	transition: width 0.35s ease;
+	transition: width 0.35s ease,
+		margin-left 0.35s ease;
 }
 
-#backButtonProject:active {
+#backBorderAbout { 
+	margin-left: 100%; 
+}
+
+
+.backButton:active {
 	color: #444;
 	font-size: 2.4vh;
 	margin-bottom: -1vh;
 }
 
-#backButtonProject:active div{
-	color: #444;
-}
-
-#backButtonProject:hover div{
-	width: 22%;
-}
+.backButton:active div{ color: #444; }
+.backButton:hover div{ width: 70%; }
+#backAbout:hover div{ margin-left: 30% }
 
 .videoNav {
 	position: absolute;
@@ -240,9 +250,9 @@ video {
 	opacity: 0;
 }
 
-videoNav:hover {
-	height: 4vh;
-	width: 4vh;
+.videoNav:hover {
+	height: 3.85vh;
+	width: 3.85vh;
 }
 
 .videoNav:active {
@@ -267,3 +277,38 @@ videoNav:hover {
 
 .connectUp { top: -22vh; }
 .connectDown { bottom: -22vh; }
+
+#aboutMeHolder {
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	width: 50%;
+	height: 50vh;
+	padding: 3vh 0 0 4%;
+	box-shadow: 0px 0px 0px 0px rgba(7,7,7,0.2);
+	transform: translateY(-50%);
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+#aboutMeText {
+	transform: translateY(-25%);
+	width: 25vw;
+	height: 44vh;
+	text-align: left;
+	vertical-align: middle;
+	display: table-cell;
+	font-size: 1.9vh;
+	color: #777;
+	transition: transform 2s ease;
+}
+
+#aboutMeTextBorder {
+	position: absolute;
+	height: 0%;
+	width: 2px;
+	top: 31%;
+	left: -10%;
+	background-color: #666666;
+	transition: 1.5s ease;
+}
