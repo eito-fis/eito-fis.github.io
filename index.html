@@ -2,12 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
 		<script src="jquery-3.3.1.min.js"></script>
 		<script src="jquery.animate-shadow-min.js"></script>
 		<script>
 			$(window).bind("load", function() {
-				$("video").delay("225").fadeTo("500", "1");
+				$("video").delay("250").fadeTo("500", "1");
 				$("svg").delay("225").fadeTo("500", "1");
 				$(".loader").fadeTo("200", "0");
 				$(".loader").css("z-index", "-10");
@@ -22,15 +23,15 @@
 					<rect id="back" x="0" y="0" width="100%" height="100%"/>
 					<g id="name" class="head">
 						<rect class="line" x="36%" y="45%" width="28%" height="0.5%"/>
-						<text class="" alignment-baseline="baseline" x="50%" y="43%">EAMON</text>
-						<text class="" alignment-baseline="hanging" x="50%" y="47%">ITO-FISHER</text>
+						<text class="" dominant-baseline="baseline" x="50%" y="43%">EAMON</text>
+						<text class="" dominant-baseline="hanging" x="50%" y="47%">ITO-FISHER</text>
 					</g>
 					<g id="aboutMe" class="subHead">
-						<text class="" alignment-baseline="hanging" x="50%" y="57.5%">About</text>
+						<text class="" dominant-baseline="hanging" x="50%" y="57.5%">About</text>
 						<rect class="line" x="49%" y="60.5%" width="2%" height="0.1%"/>
 					</g>
 					<g id="myProjects" class="subHead">
-						<text class="" alignment-baseline="hanging" x="50%" y="62%">Projects</text>
+						<text class="" dominant-baseline="hanging" x="50%" y="62%">Projects</text>
 						<rect class="line" x="48%" y="65%" width="4%" height="0.1%"/>
 					</g>
 				</mask>
@@ -45,7 +46,7 @@
 			<h1 id="projectTitle">Processing</h1>
 			<div id="projectTextBorder"></div>
 			<div id="projectText">
-				Proccesing is a java-based visual programming language that I chose as a topic for my junior year independent study. At about the same time I was learning the language, I was also beginning to draw, and decided that a project at the intersection of the two would be intresting. Here are three algorithims inspired by diffrent styles of art - each spawning hundreds of objects that act in diffrent ways to create the final image.
+				Proccesing is a java-based visual programming language that I chose as a topic for my junior year independent study. At about the same time I was learning the language, I was also beginning to draw, and decided that a project at the intersection of the two would be intresting. Here are three algorithims inspired by diffrent styles of art - each spawning hundreds of objects that act in different ways to create the final image.
 			</div>
 		</div>
 		<ul id="videoHolder">
