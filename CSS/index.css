@@ -59,6 +59,7 @@ svg {
     height: 100%;
     position:absolute;
     z-index: 3;
+    opacity: 0;
 }
 
 svg text {
@@ -152,6 +153,7 @@ video {
 	overflow: hidden;
 	transition: opacity 1.5s ease;
 	max-height: 91%;
+	opacity: 0;
 }
 
 #projectTextHolder {
@@ -325,4 +327,21 @@ video {
 	left: 80%;
 	transform: translate(-50%, -50%);
 	transition: top 1.75s ease;
+}
+
+.loader {
+	position: absolute;
+	top: 45%;
+	left: 47.5%;
+	border: 0.4vw solid #f3f3f3;
+	border-top: 0.4vw solid #777;
+	border-radius: 50%;
+	width: 5vw;
+	height: 5vw;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

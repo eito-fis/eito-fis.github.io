@@ -5,6 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
 		<script src="jquery-3.3.1.min.js"></script>
 		<script src="jquery.animate-shadow-min.js"></script>
+		<script>
+			$(window).bind("load", function() {
+				$("video").delay("225").fadeTo("500", "1");
+				$("svg").delay("225").fadeTo("500", "1");
+				$(".loader").fadeTo("200", "0");
+				$(".loader").css("z-index", "-10");
+			});
+		</script>
 		<title>Eamon Ito-Fisher</title>
 	</head>
 	<body>
@@ -79,6 +87,7 @@
 			</div>
 			<img id="aboutMeImg" src="img/potrait.jpg"></img>
 		</div>
+		<div class="loader"></div>
 		<script src="js/responsive.js"></script>
 	</body>
 </html>
