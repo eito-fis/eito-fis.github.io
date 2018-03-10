@@ -40,6 +40,7 @@ $("#coverAboutMe").click(function() {
 		$("#aboutMeHolder").delay(250).fadeTo("400", "1");
 		$("#aboutMeText").css("transform", "translateY(0)");
 		$("#aboutMeTextBorder").css( {"left":"5%", "height":"36%"} );
+		$("#aboutMeImg").css("top", "50%");
 		page = "About Me";
 	}
 });
@@ -53,6 +54,7 @@ $("#backAbout").click(function() {
 		$("#aboutMeHolder").animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 100).fadeTo("100", "0");
 		$("#aboutMeTextBorder").css( {"left":"-10%", "height":"0%"} );
 		$("#aboutMeText").css("transform", "translateY(-25%)");
+		$("#aboutMeImg").css("top", "0%");
 		page = "Home";
 	}
 });

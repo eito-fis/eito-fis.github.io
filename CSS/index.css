@@ -6,6 +6,10 @@ html, body {
 	width: 100%;
 }
 
+*:link {
+	text-decoration: none;
+}
+
 .head  {
 	font-family: 'Roboto', sans-serif;
 	font-size: 8em;
@@ -283,7 +287,7 @@ video {
 	left: 25%;
 	top: 50%;
 	width: 50%;
-	height: 50vh;
+	height: 30vh;
 	padding: 3vh 0 0 4%;
 	box-shadow: 0px 0px 0px 0px rgba(7,7,7,0.2);
 	transform: translateY(-50%);
@@ -294,7 +298,7 @@ video {
 #aboutMeText {
 	transform: translateY(-25%);
 	width: 25vw;
-	height: 44vh;
+	height: 24vh;
 	text-align: left;
 	vertical-align: middle;
 	display: table-cell;
@@ -311,4 +315,14 @@ video {
 	left: -10%;
 	background-color: #666666;
 	transition: 1.5s ease;
+}
+
+#aboutMeImg {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 0%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	transition: top 1.75s ease;
 }
