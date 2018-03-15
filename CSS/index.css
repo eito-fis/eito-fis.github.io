@@ -326,6 +326,7 @@ video {
 	transform: translateY(-50%);
 	opacity: 0;
 	box-sizing: border-box;
+	z-index: -1;
 }
 
 #aboutMeText {

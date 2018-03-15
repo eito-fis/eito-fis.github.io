@@ -38,6 +38,7 @@ $("#coverAboutMe").click(function() {
 		$("#backAbout").css("left", "2.5%");
 		$("#aboutMeHolder").delay(250).animate({"box-shadow": "0px " + width/250 + "px " + width/100 + "px " + width/350 + "px rgb(7,7,7,0.2)"}, 400);
 		$("#aboutMeHolder").delay(250).fadeTo("400", "1");
+		$("#aboutMeHolder").css("z-index", "10");
 		$("#aboutMeText").css("transform", "translateY(0)");
 		$("#aboutMeTextBorder").css( {"left":"5%", "height":"36%"} );
 		$("#aboutMeImg").css("top", "50%");
@@ -51,6 +52,7 @@ $("#backAbout").click(function() {
 		$("#videoHolder video").fadeTo("1500", "1");
 		$("#backAbout").fadeTo("50", "0");
 		$("#backAbout").css("left", "-9%");
+		$("#aboutMeHolder").css("z-index", "-1");
 		$("#aboutMeHolder").animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 100).fadeTo("100", "0");
 		$("#aboutMeTextBorder").css( {"left":"-10%", "height":"0%"} );
 		$("#aboutMeText").css("transform", "translateY(-25%)");
@@ -111,7 +113,7 @@ $("#videoHolder").on("click", ".current .videoNav", function(event) {
 		var middle = $(".current");
 		var up = $(".up");
 		var down = $(".down");
-		$("#videoHolder .current .slotHolder").delay(900).animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 400);
+		$("#videoHolder .current .slotHolder").animate({"box-shadow": "0px 0px 0px 0px rgb(7,7,7,0.2)"}, 400);
 		if ($(this).hasClass("projectUp")) {	
 			middle.removeClass("current").addClass("down");
 			up.removeClass("up").addClass("current");
